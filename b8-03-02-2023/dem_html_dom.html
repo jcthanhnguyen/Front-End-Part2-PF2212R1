@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="title">Demo HTML DOM</h1>
+    <p>This is a paragraph</p>
+
+    <script>
+        let title = document.getElementById('title');
+        console.log(title);
+        console.log(title.innerHTML);
+
+        // demo html dom -> lesson 8
+        title.innerHTML='lesson 8';
+
+        // change text color of h1
+        title.style.color='green';
+
+        //'This is a paragraph' ->
+        //'the content changed'
+        let paraElement=document.getElementById('content');
+        paraElement.innerHTML='the content changed';
+        //change background color of paragraph tag
+        paraElement.style.backgroundColor='orange';
+
+        //add new "li" element to "ul element"
+        let newListItemElement=document.getElementById
+
+        //create a tag
+        let newItem = document.createElement("li");
+
+    </script>
+</body>
+
+</html>
