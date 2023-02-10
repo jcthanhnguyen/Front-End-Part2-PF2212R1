@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--  viết chương trình để kiểm tra môn học hiện tại.
+    Nếu môn học là Javascript thì in ra 'I'm studying Javasrcipt' -->
+    <form action="#">
+        course: <input type="text" id="course-name">
+        <button id="btn-action" type="button">Submit</button>
+
+    </form>
+    <script>
+        let btnAction = document.getElementById("btn-action");
+        btnAction.addEventListener("click", () => {
+            let courseName = document.getElementById("course-name");
+            if (courseName.value == "Javascript" || courseName.value == 'javascript') console.log("I'm studying Javascript");
+            else console.log("I'm not studying Javascript");
+
+        })
+    </script>
+</body>
+
+</html>

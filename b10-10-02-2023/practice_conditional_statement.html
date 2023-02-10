@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <form action="">
+        <label for="">Nhập vào điểm của bạn: </label>
+        <input type="text" id="grade">
+        <button type="button" id="calculate">Kiểm tra xem bạn có được tuyển thẳng hay không</button>
+
+    </form>
+    <script>
+        let cal = document.getElementById('calculate');
+        cal.addEventListener("click", () => {
+            let g = parseFloat(document.getElementById('grade').value);
+
+            if (g >= 8.5) console.log('Bạn được tuyển thẳng');
+            else console.log('bạn chưa đủ điểm');
+        })
+    </script>
+</body>
+
+</html>
